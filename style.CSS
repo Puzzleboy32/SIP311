@@ -91,10 +91,23 @@ section {
     border: 3px solid #ff3b30;
 }
 
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .gallery-container img {
-    width: 200px;
-    border: 3px soild #ff6f00;
+    width: 500px;
+    max-width: 90%;
+    border: 3px solid #ff6f00;
     border-radius: 8px;
+    transition: transform 0.3 ease;
+}
+
+.gallery-container img:hover{
+    transform: scale(1.05);
 }
 
 ol{
