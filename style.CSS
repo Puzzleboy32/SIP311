@@ -203,3 +203,57 @@ video {
     border-radius: 5px;
 
 }
+
+body {
+    background: #1d1160;
+    color: #ffffff;
+}
+
+header{
+    background: #000000;
+    border-bottom: 4px solid #E56020;
+}
+
+header h2,
+nav a {
+    color: #f9a01b
+}
+
+.hero-title{
+    background: linear-gradient(135deg, #1d1160, #e56020);
+    border: 2px solid #f9a01b;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+section{
+    background: #28175a;
+    color: white;
+    border-left: 6px solid #e56020;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+section h2,
+section h3,
+section h4 {
+    color: #F9A01b
+}
+
+footer{
+    background: #000000;
+    border-top: 4px solid #E56020;
+}
+
+.gallery-container img,
+.about-image img,
+video {
+    border-color: #E56020;
+}
+
+.socials a {
+    color: #F9a01b;
+}
+
+.socials a:hover {
+    color: #ffffff;
+}
