@@ -1,18 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    background: #f2f2f2;
-    color: #333;
-}
-
-header {
-    background: #111;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
+/*Header and Title*/
 header h1 {
     margin: 0;
     font-size: 1.8em;
@@ -24,30 +10,32 @@ header h2 {
     font-size: 1em;
     color: #ff6f00;
 }
-
+/* Navigation buttons*/
 nav {
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 nav a {
-    color: #ff6f00;
+    display: inline-block;
+    background: #1D1160;
+    color: #F9A01B;
+    padding: 12px 20px;
+    border: 2px solid #E56020;
+    border-radius: 8px;
     text-decoration: none;
-    margin: 0 10px;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 nav a:hover{
+    background: #E56020;
     color: white;
-    text-decoration: underline;
-}
-
-.hero-title {
-    background: linear-gradient(to right, #ff3b30, #ff6f00);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-    margin-bottom: 40px;
-    border-radius: 10px;
+    transform: translateY(-3px);
+    text-decoration: none;
 }
 
 .hero-title h1 {
@@ -58,20 +46,13 @@ nav a:hover{
 font-size: 1.3em;
 font-style: italic;
 }
-
+/* Main page layout*/
 main {
-    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
-
-section {
-    background: white;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    border-left: 6px solid #ff3b30;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
+/* About Me section*/
 .about {
     display: flex;
     align-items: center;
@@ -90,7 +71,7 @@ section {
     border-radius: 8px;
     border: 3px solid #ff3b30;
 }
-
+/* Project Gallery*/
 .gallery-container {
     display: flex;
     gap: 20px;
@@ -103,7 +84,7 @@ section {
     max-width: 90%;
     border: 3px solid #ff6f00;
     border-radius: 8px;
-    transition: transform 0.3 ease;
+    transition: transform 0.3s ease;
 }
 
 .gallery-container img:hover{
@@ -119,7 +100,7 @@ ol li {
     margin-bottom: 12px;
     font-size: 1.1em;
 }
-
+/* Contact form */
 form input, form textarea {
     width: 100%;
     max-width: 400px;
@@ -130,7 +111,7 @@ form input, form textarea {
 }
 
 form button {
-    background: #ff3b30;
+    background: #E56020;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -142,32 +123,16 @@ form button {
 form button:hover {
     background: #ff6f00;
 }
-
-footer{
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-    border-top: 4px solid #ff3b30;
-}
-
+/* Social media links*/
 .socials {
     margin-top: 20px;
     text-align: center;
 }
 
-.socials a {
-    color: #ff6f00;
-    text-decoration: none;
-    margin: 0 8px;
-    font-weight: bold;
-}
-
 .socials a:hover {
     color: black;
 }
-
+/* Images and videos */
 img {
     max-width: 100%;
     height: auto;
@@ -178,7 +143,7 @@ img {
 section p, section h2, section h3 {
     margin: 10px 0;
 }
-
+/* Progress updates*/
 .progress-update {
     color: #b30000;
     background-color: #fff3a3;
@@ -203,43 +168,64 @@ video {
     border-radius: 5px;
 
 }
-
+/* Phoenix Suns colors*/
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
     background: #1d1160;
     color: #ffffff;
 }
 
 header{
+    color: white;
+    padding: 20px;
+    text-align: center;
     background: #000000;
     border-bottom: 4px solid #E56020;
 }
 
 header h2,
 nav a {
-    color: #f9a01b
+    color: #F9A01B;
 }
 
 .hero-title{
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
     background: linear-gradient(135deg, #1d1160, #e56020);
     border: 2px solid #f9a01b;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    max-width: 1100px;
+    margin: 30px auto 40px;
 }
 
 section{
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+    margin-bottom: 30px;
     background: #28175a;
     color: white;
     border-left: 6px solid #e56020;
     border-radius: 14px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    padding: 30px;
 }
 
 section h2,
 section h3,
 section h4 {
-    color: #F9A01b
+    color: #F9A01b;
 }
 
 footer{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
     background: #000000;
     border-top: 4px solid #E56020;
 }
@@ -250,10 +236,182 @@ video {
     border-color: #E56020;
 }
 
+/*Homepage title*/
 .socials a {
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
     color: #F9a01b;
 }
 
 .socials a:hover {
     color: #ffffff;
+}
+
+section:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(249, 160, 27, 0.35);
+}
+
+section img {
+    border-radius: 10px;
+    border: 2px solid #E56020;
+    margin: 20px auto;
+}
+
+section h3 {
+    border-bottom: 2px solid #F9A01B;
+    padding-bottom: 10px;
+}
+@media (max-width: 768px ) {
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .hero-title {
+        padding: 45px 20px;
+    }
+
+}
+
+.hero-title h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title p {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.8;
+}
+
+.hero-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #F9A01B;
+    margin: 25px auto 0;
+    border-radius: 10px;
+}
+
+/* Profile picture */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 250px;
+    min-height: auto;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+.about-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #F9A01B;
+    box-shadow: 0 0 25px rgba(249, 160, 27, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* SIP Boards objectives*/
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    max-width: 450px;
+    border: 3px solid #F9A01B;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(249, 160, 27, 0.5);
+}
+
+.objective h3 {
+    color: #F9A01B;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.objective h4 {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+.objective img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 3px solid #F9A01B;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation buttons*/
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* SIP Boards Page Titles */
+
+main > h1,
+main > h2 {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+main > h1::after,
+main > h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #F9A01B;
+    border-radius: 10px;
+    margin: 15px auto 0;
 }
